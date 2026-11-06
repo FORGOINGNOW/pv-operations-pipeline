@@ -1,0 +1,18 @@
+[Unit]
+Description=Synthetic PV daily partition processing
+After=network-online.target
+
+[Service]
+Type=oneshot
+User=pv
+WorkingDirectory=/opt/pv
+Environment=TZ=Asia/Shanghai
+Environment=PV_PYTHON=/opt/pv/.venv/bin/python
+ExecStart=/bin/bash /opt/pv/scripts/scheduled.sh
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/pv/runtime
+StandardOutput=journal
+StandardError=journal
+

@@ -1,0 +1,16 @@
+profile: demo
+start: '2025-01-01'
+end: '2026-01-01'
+stations: 8
+inverters: 1
+seed: 20251106
+timezone: Asia/Shanghai
+data_version: synthetic-v1
+max_gap_minutes: 10
+lookback_days: 3
+peer_min: 5
+threshold: -0.20
+duration_minutes: 30
+coverage_min: 0.8
+tariff_yuan_kwh: 0.45
+

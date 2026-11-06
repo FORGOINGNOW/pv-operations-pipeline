@@ -1,0 +1,9 @@
+station_id,event_time,ghi_wm2,dni_wm2,dhi_wm2,poa_wm2,ambient_c,wind_ms,rain_mm,weather_type,weather_quality,timezone
+S0000,2025-01-01T00:00:00+08:00,0.0,0.0,0.0,0.0,1.643,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:05:00+08:00,0.0,0.0,0.0,0.0,1.6,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:10:00+08:00,0.0,0.0,0.0,0.0,1.559,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:15:00+08:00,0.0,0.0,0.0,0.0,1.519,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:20:00+08:00,0.0,0.0,0.0,0.0,1.481,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:25:00+08:00,0.0,0.0,0.0,0.0,1.445,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:30:00+08:00,0.0,0.0,0.0,0.0,1.411,0.976,0,cloudy,simulated_sensor,Asia/Shanghai
+S0000,2025-01-01T00:35:00+08:00,0.0,0.0,0.0,0.0,1.379,0.976,0,cloudy,simulated_sensor,Asia/Shanghai

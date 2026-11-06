@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "failure_exit": 1,
+  "watermark_after_failure": false,
+  "completed_clean_partition_after_failure": false,
+  "transient_retry_exit": 0,
+  "idempotent_receipts": true,
+  "lock_conflict_exit": 73,
+  "root": "E:\\\u6570\u636e\u5206\u6790\\pv-operations-pipeline\\runtime\\recovery-1793976435148013600",
+  "assertions": "all passed"
+}

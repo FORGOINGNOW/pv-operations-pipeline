@@ -1,0 +1,14 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+runtime/
+*.egg-info/
+.env
+*-console.txt
+runtime-install.txt
+*.duckdb*
+*.joblib
+*.parquet
+!tests/fixtures/*.parquet
+

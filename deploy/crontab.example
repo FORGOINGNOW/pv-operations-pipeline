@@ -1,0 +1,6 @@
+# Choose cron OR systemd, never enable both. Install manually only.
+SHELL=/bin/bash
+PATH=/usr/local/bin:/usr/bin:/bin
+CRON_TZ=Asia/Shanghai
+PV_PYTHON=/opt/pv/.venv/bin/python
+10 2 * * * cd /opt/pv && /bin/bash scripts/scheduled.sh >> /opt/pv/runtime/cron.log 2>&1

@@ -1,0 +1,8 @@
+[Unit]
+Description=Synthetic PV daily demonstration
+[Timer]
+OnCalendar=*-*-* 02:10:00 Asia/Shanghai
+Persistent=true
+Unit=pv-daily.service
+[Install]
+WantedBy=timers.target

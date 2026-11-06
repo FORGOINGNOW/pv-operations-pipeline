@@ -1,0 +1,28 @@
+services:
+  pipeline:
+    build:
+      context: ..
+      dockerfile: deploy/Dockerfile
+    volumes:
+      - pv-runtime:/opt/pv/runtime
+    security_opt:
+      - no-new-privileges:true
+    cap_drop: [ALL]
+  postgres:
+    profiles: [postgres]
+    image: postgres:16-alpine
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-pv}
+      POSTGRES_DB: ${POSTGRES_DB:-pv}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a local password in an untracked env file}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - pg-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, "pg_isready -U $$POSTGRES_USER -d $$POSTGRES_DB"]
+      interval: 5s
+      retries: 10
+volumes:
+  pv-runtime:
+  pg-data:
