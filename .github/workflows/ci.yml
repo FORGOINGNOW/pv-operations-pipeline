@@ -22,4 +22,6 @@ jobs:
       - run: bash scripts/90_demo.sh --config configs/smoke.yaml --run-id ci-smoke
       - run: .venv/bin/python scripts/verify_sql.py --root runtime/smoke
       - run: .venv/bin/python scripts/verify_recovery.py
+      - run: .venv/bin/python scripts/verify_late.py
+      - run: .venv/bin/python scripts/evaluate_quality.py --config configs/smoke.yaml --root runtime/smoke
       - run: .venv/bin/python -m pip_audit --skip-editable --format json --output runtime/security-audit.json

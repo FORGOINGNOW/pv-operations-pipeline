@@ -75,6 +75,9 @@ run_step() {
   while :; do
     # Conditional context intentionally handles exit status; ERR does not fire here.
     if "$PYTHON" -m pv_pipeline.cli "$step" "${ARGS[@]}" --attempt "$attempt"; then
+      if [[ "$step" == evaluate ]] && (( ! DRY )); then
+        "$PYTHON" scripts/evaluate_quality.py --config "$CONFIG" --root "$ROOT"
+      fi
       return 0
     else rc=$?; fi
     if (( rc != 75 || attempt >= 3 )); then return "$rc"; fi

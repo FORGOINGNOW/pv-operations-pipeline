@@ -28,6 +28,8 @@ for name in [
     source = root / name
     dest = target / ("model_manifest.json" if name == "models/manifest.json" else source.name)
     shutil.copyfile(source, dest)
+if (root / "quality_evaluation.json").exists():
+    shutil.copyfile(root / "quality_evaluation.json", target / "quality_evaluation.json")
 logs = []
 for path in sorted((root / "logs").glob("*.jsonl")):
     logs.extend(json.loads(line) for line in path.read_text(encoding="utf-8").splitlines())

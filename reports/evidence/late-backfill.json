@@ -1,0 +1,28 @@
+{
+  "synthetic": true,
+  "before": {
+    "input_count": 2289,
+    "retained": 2282,
+    "deduplicated": 2,
+    "quarantined": 5,
+    "filled": 0,
+    "output_count": 2282,
+    "missing_grid_rows": 22,
+    "reconciliation_ok": true,
+    "interpolation_policy": "disabled; unknown stays unknown"
+  },
+  "after": {
+    "input_count": 2289,
+    "retained": 2283,
+    "deduplicated": 2,
+    "quarantined": 4,
+    "filled": 0,
+    "output_count": 2283,
+    "missing_grid_rows": 21,
+    "reconciliation_ok": true,
+    "interpolation_policy": "disabled; unknown stays unknown"
+  },
+  "late_row_recovered": 1,
+  "raw_checksum_corruption_exit": 1,
+  "derived_output_unchanged_on_integrity_failure": true
+}
