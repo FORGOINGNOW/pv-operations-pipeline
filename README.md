@@ -67,7 +67,9 @@ bash scripts/run_daily.sh --config configs/demo.yaml --date 2025-12-01 --dry-run
 bash scripts/99_verify.sh --config configs/demo.yaml
 ```
 
-`backfill` 显式接受超出迟到窗口的记录。`90_demo` 使用默认质量隔离策略，故与 backfill 的保留行数可不同。缺省回看为3天；当前不自动扩展给定日期范围，运维需显式指定回看范围。只有全链路成功才推进 watermark。每步 receipt 包含代码/配置/依赖摘要和输出 SHA256；校验匹配才恢复，不凭文件存在跳过。原始档案/天气也计算校验。
+`backfill` 处理指定历史范围；恢复超出迟到窗口的记录须显式加 `--allow-late`。默认与 `90_demo` 保持相同质量隔离策略。缺省回看为3天；当前不自动扩展给定日期范围，运维需显式指定回看范围。只有全链路成功才推进 watermark。每步 receipt 包含代码/配置/依赖摘要和输出 SHA256；校验匹配才恢复，不凭文件存在跳过。原始档案/天气也计算校验。
+
+质量故障单独评价输出 `quality_evaluation.json`（按版本化注入计划事后重建标签，仅限已知调度变异），与设备故障指标分开；原主评价 JSON 中的质量状态仅描述其内置评价范围。
 
 独立步骤：`00_doctor`、`01_bootstrap`、`10_generate`、`20_collect`、`30_clean`、`40_aggregate`、`45_features`、`50_train`、`60_score`、`70_evaluate`、`80_dashboard`、`85_report`、`run_daily`、`backfill`、`90_demo`、`99_verify`。通用数据步骤支持 `--config --date/--start/--end --run-id --dry-run --force --help`；bootstrap 是独立安装入口。
 
@@ -80,6 +82,8 @@ bash scripts/99_verify.sh --config configs/demo.yaml
 - 持续异常默认物理残差小于−20%、辐照≥100W/m²、实际持续≥30分钟；长缺口切断、两个正常样本恢复、计划检修抑制。这是演示阈值，不是行业标准；当前尚未完成验证集阈值优化。
 - 观测能量只在有限、间隔≤10分钟的端点之间梯形积分；缺失不记零，禁用插值；累计表用于质量核验，不与积分叠加。PR 仅在覆盖充足、POA分母有效时计算。每日最后一个未观测端点不外推。
 - 模型 MAE/RMSE 单位kW；容量归一 MAE 的分母为每台逆变器对应的kWp。无样本/无正例指标输出null（N/A），不填1；不报告夜间近零分母的MAPE。
+
+![实际浏览器截图：合成 smoke 看板](reports/screenshots/smoke-dashboard.jpg)
 
 实测数字、截图、资源、CI 与未完成项集中在 [验收记录](docs/acceptance.md)，模型明细见 `reports/demo/evaluation.json`。不预设成功精度，也不将百站能力外推十万站实绩。
 

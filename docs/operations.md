@@ -41,7 +41,7 @@ cron和systemd timer二选一，模板在deploy；**不自动安装或启用**�
 
 ## 日志、保留与备份
 
-按run_id生成JSONL，自然分片；默认不自动删除或轮转历史文件。生产化可按本项目绝对路径加logrotate策略并先dry-run。本版本只提供安全列举，不自动清理用户文件：
+按run_id生成JSONL，自然分片；默认不自动删除或轮转历史文件。`deploy/logrotate.conf` 仅为人工安装模板；`scripts/retention.py` 默认只列举本项目runtime中超期JSONL，只有显式--apply才移除，拒绝越界和符号链接。生产化可按本项目绝对路径加logrotate策略并先dry-run。本版本只提供安全列举，不自动清理用户文件：
 
 ```bash
 find runtime/demo/logs -maxdepth 1 -type f -name '*.jsonl' -mtime +30 -print
