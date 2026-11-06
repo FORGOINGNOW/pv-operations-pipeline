@@ -65,6 +65,7 @@ def test_T03_counter():
 def test_T04_timestamp_and_units(cfg, timestamp):
     m = normalize(message(event_time=timestamp, ac_kw=2000, power_unit="W"), cfg, "2025-01-01")
     assert m["ac_kw"] == 2
+    assert m["power_unit"] == "kW"
     assert "unit_converted" in m["quality_tags"]
 
 

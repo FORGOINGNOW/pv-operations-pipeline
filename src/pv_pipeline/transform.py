@@ -70,6 +70,8 @@ def normalize(payload, c, day, allow_late=False):
     m["ac_kw"] *= factor
     m["dc_kw"] *= factor
     m["cumulative_kwh"] *= efactor
+    m["source_power_unit"], m["source_energy_unit"] = m["power_unit"], m["energy_unit"]
+    m["power_unit"], m["energy_unit"] = "kW", "kWh"
     if m["ac_kw"] < 0:
         flags.append("negative_power")
         m["ac_kw"] = np.nan
