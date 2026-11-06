@@ -10,4 +10,5 @@ dws:
 scored:
   key: [inverter_id, event_time]
   required: [station_id, inverter_id, event_time, predicted_kw, physical_kw, prediction_source, evaluation_eligible, rule_flag, fixed_flag]
+  nullable: [predicted_kw, physical_kw]
 forbidden_model_features: [simulation_truth, truth_id, fault_type, ideal_power, true_loss, future_workorder, alarm_code]

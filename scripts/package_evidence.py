@@ -33,6 +33,13 @@ if (root / "quality_evaluation.json").exists():
 logs = []
 for path in sorted((root / "logs").glob("*.jsonl")):
     logs.extend(json.loads(line) for line in path.read_text(encoding="utf-8").splitlines())
+generation_runs = defaultdict(lambda: {"partitions": 0, "reused": 0, "sum_body_seconds": 0.0})
+for record in logs:
+    if record["step"] == "generate":
+        g = generation_runs[record["run_id"]]
+        g["partitions"] += 1
+        g["reused"] += int(record.get("reused", False))
+        g["sum_body_seconds"] += record["duration"]
 if a.run_id:
     logs = [r for r in logs if r["run_id"] == a.run_id]
 by_step = defaultdict(
@@ -54,6 +61,7 @@ evidence = {
     "synthetic": True,
     "profile": a.profile,
     "observed_run_ids": sorted({r["run_id"] for r in logs}),
+    "source_generation_runs": dict(generation_runs),
     "partitions": len(manifests),
     "start": manifests[0]["date"],
     "last_date_inclusive": manifests[-1]["date"],

@@ -1,0 +1,7 @@
+{
+  "synthetic": true,
+  "schema_version": "1.0",
+  "partitions_checked": 1095,
+  "units_and_keys": "passed",
+  "model_feature_contract": "passed"
+}

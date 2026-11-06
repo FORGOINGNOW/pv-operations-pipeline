@@ -33,7 +33,9 @@ for layer in ["dwd", "dws", "scored"]:
             assert df.daylight_coverage.dropna().between(0, 1).all()
             assert df.communication_online.between(0, 1).all()
         else:
-            assert (df.predicted_kw >= 0).all()
+            assert (df.predicted_kw.dropna() >= 0).all()
+            unknown = df.predicted_kw.isna()
+            assert df.loc[unknown, "quality_tags"].str.contains("weather_missing").all()
         checked += 1
 manifest = json.loads((root / "models/manifest.json").read_text(encoding="utf-8"))
 assert manifest["features"] == FEATURES
