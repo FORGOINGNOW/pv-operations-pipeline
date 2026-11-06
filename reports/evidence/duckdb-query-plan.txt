@@ -1,3 +1,4 @@
+Incremental upsert replay stable: 1000 sampled keys
 DWD unique; SQL windows executed; query plan:
 ┌─────────────────────────────────────┐
 │┌───────────────────────────────────┐│
@@ -7,7 +8,7 @@ DWD unique; SQL windows executed; query plan:
 EXPLAIN ANALYZE SELECT station_id,sum(observed_kwh) FROM read_parquet(?) WHERE date='2025-01-01' GROUP BY station_id
 ┌────────────────────────────────────────────────┐
 │┌──────────────────────────────────────────────┐│
-││              Total Time: 0.0029s             ││
+││              Total Time: 0.0021s             ││
 │└──────────────────────────────────────────────┘│
 └────────────────────────────────────────────────┘
 ┌───────────────────────────┐
