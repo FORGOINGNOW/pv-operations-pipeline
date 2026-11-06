@@ -1,0 +1,13 @@
+schema_version: '1.0'
+timezone: Asia/Shanghai
+dwd:
+  key: [inverter_id, event_time]
+  required: [message_id, station_id, inverter_id, event_time, ingest_time, ac_kw, dc_kw, cumulative_kwh, power_unit, energy_unit, quality_tags, source_file, source_line, source_byte, interpolated, capacity_kwp, poa_wm2]
+  units: {power_unit: kW, energy_unit: kWh}
+dws:
+  key: [station_id, day]
+  required: [station_id, day, observed_kwh, estimated_kwh, daylight_coverage, communication_online, device_availability, confidence, capacity_kwp]
+scored:
+  key: [inverter_id, event_time]
+  required: [station_id, inverter_id, event_time, predicted_kw, physical_kw, prediction_source, evaluation_eligible, rule_flag, fixed_flag]
+forbidden_model_features: [simulation_truth, truth_id, fault_type, ideal_power, true_loss, future_workorder, alarm_code]
