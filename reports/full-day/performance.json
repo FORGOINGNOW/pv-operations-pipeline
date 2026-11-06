@@ -1,0 +1,83 @@
+{
+  "synthetic": true,
+  "profile": "full-day",
+  "observed_run_ids": [
+    "full-100-stations-one-day"
+  ],
+  "source_generation_runs": {
+    "full-100-stations-one-day": {
+      "partitions": 1,
+      "reused": 0,
+      "sum_body_seconds": 2.4541
+    }
+  },
+  "partitions": 1,
+  "start": "2025-01-01",
+  "last_date_inclusive": "2025-01-01",
+  "grid_rows": 28800,
+  "raw_rows": 28760,
+  "steps": {
+    "generate": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 2.4541,
+      "max_end_step_rss_mib": 210.87
+    },
+    "collect": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.1774,
+      "max_end_step_rss_mib": 167.51
+    },
+    "clean": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 3.3193,
+      "max_end_step_rss_mib": 189.19
+    },
+    "aggregate": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 4.6644,
+      "max_end_step_rss_mib": 172.23
+    },
+    "features": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.3718,
+      "max_end_step_rss_mib": 170.89
+    },
+    "train": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.3179,
+      "max_end_step_rss_mib": 171.56
+    },
+    "score": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 6.836,
+      "max_end_step_rss_mib": 209.34
+    },
+    "evaluate": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.0931,
+      "max_end_step_rss_mib": 170.06
+    },
+    "dashboard": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.0635,
+      "max_end_step_rss_mib": 167.7
+    },
+    "report": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.0603,
+      "max_end_step_rss_mib": 168.36
+    }
+  },
+  "disk_bytes_by_layer": {
+    "raw": 21106844,
+    "ods": 1046997,
+    "dwd": 802082,
+    "features": 905237,
+    "scored": 1347460,
+    "ads": 12280
+  },
+  "memory_note": "RSS sampled at step completion, NOT peak RSS; includes interpreter, excludes other processes",
+  "timing_note": "actual sums of step body durations; excludes interpreter startup, hashing and Shell overhead",
+  "source_root": "runtime/full-day",
+  "config_sha256": "6a556af029cb5287f31f7dbc42823e9cbda9b25f5c5f1d21b10ca00e75fd9653"
+}

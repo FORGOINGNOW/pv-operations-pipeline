@@ -1,0 +1,12 @@
+{
+  "synthetic": true,
+  "annual_partitions": 365,
+  "receipts_compared": 2194,
+  "identical": true,
+  "backfill_exit_code": 0,
+  "watermark": {
+    "last_success_end_exclusive": "2026-01-01",
+    "run_id": "demo-backfill-check"
+  },
+  "evidence_console_tail": "PIPELINE_SUCCESS run_id=demo-backfill-check root=E:/数据分析/pv-operations-pipeline/runtime/demo"
+}

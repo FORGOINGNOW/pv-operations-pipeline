@@ -1,0 +1,26 @@
+[
+  {
+    "train_through_month": 4,
+    "test_month": 5,
+    "n": 10615,
+    "mae_kw": 0.1294468497157693,
+    "rmse_kw": 0.2789006100328653,
+    "capacity_nmae": 0.02182491484811099
+  },
+  {
+    "train_through_month": 6,
+    "test_month": 7,
+    "n": 10820,
+    "mae_kw": 0.11560872650740614,
+    "rmse_kw": 0.31996722623382096,
+    "capacity_nmae": 0.020007372014560595
+  },
+  {
+    "train_through_month": 8,
+    "test_month": 9,
+    "n": 9903,
+    "mae_kw": 0.09708107785855737,
+    "rmse_kw": 0.3040362817058818,
+    "capacity_nmae": 0.0165486536351166
+  }
+]

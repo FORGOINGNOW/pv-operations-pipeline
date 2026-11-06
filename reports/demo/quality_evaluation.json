@@ -1,0 +1,27 @@
+{
+  "synthetic": true,
+  "scope": "known scheduled row corruptions; not all real-world data quality faults",
+  "truth_source": "versioned injection schedule, independently enumerated here for post-hoc evaluation",
+  "config_sha256": "96b30bb27bd4f9d55ad77022c665965c23b07441fd212ef5e6df7a5757def42d",
+  "point_quality": {
+    "tp": 4676,
+    "fp": 0,
+    "fn": 0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0
+  },
+  "scheduled_gap_samples": 5475,
+  "scheduled_gap_samples_absent": 5475,
+  "examples": {
+    "fp": [],
+    "fn": []
+  },
+  "limits": [
+    "single-sample sensor_stuck is not observable",
+    "sensor voltage drift is a fault candidate, not a quality label",
+    "point scoring does not provide event-level quality matching",
+    "random missing rows not used as labeled positives",
+    "late backfill intentionally accepts late rows; compare same operating mode"
+  ]
+}

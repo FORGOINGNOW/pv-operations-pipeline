@@ -1,0 +1,11 @@
+{
+  "synthetic": true,
+  "input_count": 28760,
+  "retained": 28753,
+  "deduplicated": 2,
+  "quarantined": 5,
+  "filled": 0,
+  "missing_grid_rows": 47,
+  "partitions": 1,
+  "row_conservation": true
+}

@@ -1,0 +1,36 @@
+{
+  "model_version": "pv-v1",
+  "features": [
+    "poa_wm2",
+    "ambient_c",
+    "wind_ms",
+    "capacity_kwp",
+    "inverter_capacity_kw",
+    "tilt_deg",
+    "azimuth_deg",
+    "gamma",
+    "hour_sin",
+    "hour_cos",
+    "doy_sin",
+    "doy_cos"
+  ],
+  "config_sha256": "96b30bb27bd4f9d55ad77022c665965c23b07441fd212ef5e6df7a5757def42d",
+  "target": "5-minute sampled mean AC kW; contemporaneous measured-style weather benchmark",
+  "train_latest": "2025-08-31 17:30:00+08:00",
+  "train_n": 78677,
+  "validation_n": 20072,
+  "simple_capacity_coefficient": 0.3439285714285715,
+  "trials": [
+    {
+      "max_leaf_nodes": 7,
+      "validation_mae_kw": 0.08716271260408419
+    },
+    {
+      "max_leaf_nodes": 15,
+      "validation_mae_kw": 0.08200091628455282
+    }
+  ],
+  "truth_used": false,
+  "sample_limit": 120000,
+  "filter": "available status, alarm code and quality only; residual unlabeled contamination possible"
+}

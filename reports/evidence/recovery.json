@@ -6,6 +6,6 @@
   "transient_retry_exit": 0,
   "idempotent_receipts": true,
   "lock_conflict_exit": 73,
-  "root": "E:\\\u6570\u636e\u5206\u6790\\pv-operations-pipeline\\runtime\\recovery-1793976435148013600",
+  "root": "E:\\\u6570\u636e\u5206\u6790\\pv-operations-pipeline\\runtime\\recovery-1793977026061559300",
   "assertions": "all passed"
 }

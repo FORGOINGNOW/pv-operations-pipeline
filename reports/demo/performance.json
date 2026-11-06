@@ -1,0 +1,88 @@
+{
+  "synthetic": true,
+  "profile": "demo",
+  "observed_run_ids": [
+    "demo-final"
+  ],
+  "source_generation_runs": {
+    "demo-final": {
+      "partitions": 365,
+      "reused": 365,
+      "sum_body_seconds": 5.982300000000007
+    },
+    "demo-year": {
+      "partitions": 365,
+      "reused": 0,
+      "sum_body_seconds": 77.64580000000001
+    }
+  },
+  "partitions": 365,
+  "start": "2025-01-01",
+  "last_date_inclusive": "2025-12-31",
+  "grid_rows": 840960,
+  "raw_rows": 835741,
+  "steps": {
+    "generate": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 5.982300000000007,
+      "max_end_step_rss_mib": 162.32
+    },
+    "collect": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 15.0648,
+      "max_end_step_rss_mib": 176.36
+    },
+    "clean": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 240.68549999999996,
+      "max_end_step_rss_mib": 185.37
+    },
+    "aggregate": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 72.24880000000002,
+      "max_end_step_rss_mib": 178.42
+    },
+    "features": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 36.19219999999999,
+      "max_end_step_rss_mib": 180.02
+    },
+    "train": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 1.2694,
+      "max_end_step_rss_mib": 184.92
+    },
+    "score": {
+      "partitions_executed": 365,
+      "sum_step_seconds": 569.6163999999999,
+      "max_end_step_rss_mib": 207.84
+    },
+    "evaluate": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 19.6139,
+      "max_end_step_rss_mib": 188.5
+    },
+    "dashboard": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 3.3446,
+      "max_end_step_rss_mib": 186.79
+    },
+    "report": {
+      "partitions_executed": 1,
+      "sum_step_seconds": 0.9845,
+      "max_end_step_rss_mib": 178.55
+    }
+  },
+  "disk_bytes_by_layer": {
+    "raw": 616603426,
+    "ods": 33662993,
+    "dwd": 38828530,
+    "features": 44807220,
+    "scored": 59073214,
+    "ads": 2097793
+  },
+  "memory_note": "RSS sampled at step completion, NOT peak RSS; includes interpreter, excludes other processes",
+  "timing_note": "actual sums of step body durations; excludes interpreter startup, hashing and Shell overhead",
+  "source_root": "runtime/demo",
+  "config_sha256": "96b30bb27bd4f9d55ad77022c665965c23b07441fd212ef5e6df7a5757def42d"
+}

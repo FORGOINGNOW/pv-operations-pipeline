@@ -1,6 +1,6 @@
 # 执行验收记录 — SYNTHETIC
 
-执行日期：2026-11-06，Asia/Shanghai。此文件配合 reports 中机器生成的 evidence/evaluation，而非手写精度承诺。最终实测数据将在完成运行后补充。
+执行日期：2026-11-06，Asia/Shanghai。此文件配合 reports 中机器生成的 evidence/evaluation，而非手写精度承诺。最终实测数据、命令与资源口径见 [measured_results.md](measured_results.md)。
 
 ## 已落地
 

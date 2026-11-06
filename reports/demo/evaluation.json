@@ -1,0 +1,280 @@
+{
+  "synthetic": true,
+  "run_profile": "demo",
+  "model_version": "pv-v1",
+  "test_period": "2025-11-01 <= local date < 2026-01-01",
+  "model_comparison": {
+    "physical": {
+      "n": 18253,
+      "mae_kw": 0.0617100568779024,
+      "rmse_kw": 0.2467241443430657,
+      "capacity_nmae": 0.010623728244784652
+    },
+    "regression": {
+      "n": 18253,
+      "mae_kw": 0.06808955859597494,
+      "rmse_kw": 0.24478777764844556,
+      "capacity_nmae": 0.011599987971357984
+    },
+    "capacity_median": {
+      "n": 18253,
+      "mae_kw": 0.8133144318288188,
+      "rmse_kw": 0.9869539494036049,
+      "capacity_nmae": 0.1250847080652104
+    }
+  },
+  "strata": [
+    {
+      "dimension": "station_id",
+      "value": "S0000",
+      "n": 2315,
+      "mae_kw": 0.16850324014744517,
+      "rmse_kw": 0.4517201539149165,
+      "capacity_nmae": 0.03370064802948903
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0001",
+      "n": 2311,
+      "mae_kw": 0.18961336119601593,
+      "rmse_kw": 0.5085284083355243,
+      "capacity_nmae": 0.031602226866002656
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0002",
+      "n": 1989,
+      "mae_kw": 0.0309522827664321,
+      "rmse_kw": 0.040565724948253466,
+      "capacity_nmae": 0.004421754680918872
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0003",
+      "n": 2338,
+      "mae_kw": 0.034997691269126864,
+      "rmse_kw": 0.05244039960465014,
+      "capacity_nmae": 0.004374711408640858
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0004",
+      "n": 2268,
+      "mae_kw": 0.02251830511068808,
+      "rmse_kw": 0.02982235368894904,
+      "capacity_nmae": 0.0045036610221376155
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0005",
+      "n": 2296,
+      "mae_kw": 0.02740375677469694,
+      "rmse_kw": 0.035867053394785256,
+      "capacity_nmae": 0.004567292795782824
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0006",
+      "n": 2311,
+      "mae_kw": 0.031836669905680355,
+      "rmse_kw": 0.04150730745772391,
+      "capacity_nmae": 0.00454809570081148
+    },
+    {
+      "dimension": "station_id",
+      "value": "S0007",
+      "n": 2425,
+      "mae_kw": 0.034475651991578676,
+      "rmse_kw": 0.045763464638183725,
+      "capacity_nmae": 0.0043094564989473345
+    },
+    {
+      "dimension": "weather_type",
+      "value": "clear",
+      "n": 6283,
+      "mae_kw": 0.07840906934722715,
+      "rmse_kw": 0.2755711888523653,
+      "capacity_nmae": 0.013305044268623558
+    },
+    {
+      "dimension": "weather_type",
+      "value": "cloudy",
+      "n": 11970,
+      "mae_kw": 0.062672893094712,
+      "rmse_kw": 0.2269648788537888,
+      "capacity_nmae": 0.010705011470462445
+    },
+    {
+      "dimension": "inverter_capacity_kw",
+      "value": "4.25",
+      "n": 4583,
+      "mae_kw": 0.09625933164572903,
+      "rmse_kw": 0.321732771798867,
+      "capacity_nmae": 0.019251866329145804
+    },
+    {
+      "dimension": "inverter_capacity_kw",
+      "value": "5.1",
+      "n": 4607,
+      "mae_kw": 0.10877262932031624,
+      "rmse_kw": 0.36105773939989994,
+      "capacity_nmae": 0.018128771553386044
+    },
+    {
+      "dimension": "inverter_capacity_kw",
+      "value": "5.95",
+      "n": 4300,
+      "mae_kw": 0.031427589435921104,
+      "rmse_kw": 0.04107445384285429,
+      "capacity_nmae": 0.004489655633703015
+    },
+    {
+      "dimension": "inverter_capacity_kw",
+      "value": "6.8",
+      "n": 4763,
+      "mae_kw": 0.03473190389813077,
+      "rmse_kw": 0.0491544164200042,
+      "capacity_nmae": 0.004341487987266347
+    }
+  ],
+  "event": {
+    "tp": 32,
+    "fp": 0,
+    "fn": 12,
+    "precision": 1.0,
+    "recall": 0.7272727272727273,
+    "f1": 0.8421052631578947
+  },
+  "point_equipment": {
+    "tp": 2003,
+    "fp": 2,
+    "fn": 0,
+    "precision": 0.999002493765586,
+    "recall": 1.0,
+    "f1": 0.9995009980039921
+  },
+  "fixed_threshold_point": {
+    "tp": 31,
+    "fp": 83,
+    "fn": 1972,
+    "precision": 0.2719298245614035,
+    "recall": 0.01547678482276585,
+    "f1": 0.029286726499763816
+  },
+  "quality_evaluation": {
+    "status": "quarantine row conservation tested; labeled quality PR not implemented"
+  },
+  "threshold_sensitivity_point_test_descriptive": {
+    "-0.1": {
+      "tp": 2003,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.999002493765586,
+      "recall": 1.0,
+      "f1": 0.9995009980039921
+    },
+    "-0.2": {
+      "tp": 2003,
+      "fp": 2,
+      "fn": 0,
+      "precision": 0.999002493765586,
+      "recall": 1.0,
+      "f1": 0.9995009980039921
+    },
+    "-0.3": {
+      "tp": 1858,
+      "fp": 1,
+      "fn": 145,
+      "precision": 0.9994620763851533,
+      "recall": 0.927608587119321,
+      "f1": 0.9621957534955982
+    }
+  },
+  "threshold_selection": "-0.20 demonstration preset; no claim of validation optimization",
+  "precision_at_k": 1.0,
+  "k": 10,
+  "false_alarms_per_station_day": 0.0,
+  "mean_delay_minutes": 0.625,
+  "mean_duration_error_minutes": 6.09375,
+  "unobservable_truth_n": 18,
+  "fp_examples": [],
+  "fn_examples": [
+    {
+      "truth_id": "2025-11-06-0-curtailment",
+      "station_id": "S0000",
+      "inverter_id": "S0000-I0",
+      "kind": "curtailment",
+      "category": "equipment",
+      "start": "2025-11-06 11:00:00+08:00",
+      "end": "2025-11-06 11:15:00+08:00",
+      "severity": 0.55,
+      "observable": true,
+      "parameters": {
+        "factor": 0.45
+      },
+      "overlaps": []
+    },
+    {
+      "truth_id": "2025-11-12-1-meter_bias",
+      "station_id": "S0001",
+      "inverter_id": "S0001-I0",
+      "kind": "meter_bias",
+      "category": "equipment",
+      "start": "2025-11-12 11:00:00+08:00",
+      "end": "2025-11-12 11:15:00+08:00",
+      "severity": 0.55,
+      "observable": true,
+      "parameters": {
+        "factor": 0.45
+      },
+      "overlaps": []
+    },
+    {
+      "truth_id": "2025-11-21-0-meter_bias",
+      "station_id": "S0000",
+      "inverter_id": "S0000-I0",
+      "kind": "meter_bias",
+      "category": "equipment",
+      "start": "2025-11-21 11:00:00+08:00",
+      "end": "2025-11-21 11:15:00+08:00",
+      "severity": 0.55,
+      "observable": true,
+      "parameters": {
+        "factor": 0.45
+      },
+      "overlaps": []
+    },
+    {
+      "truth_id": "2025-11-21-1-sensor_bias",
+      "station_id": "S0001",
+      "inverter_id": "S0001-I0",
+      "kind": "sensor_bias",
+      "category": "equipment",
+      "start": "2025-11-21 11:00:00+08:00",
+      "end": "2025-11-21 11:15:00+08:00",
+      "severity": 0.55,
+      "observable": true,
+      "parameters": {
+        "factor": 0.45
+      },
+      "overlaps": []
+    },
+    {
+      "truth_id": "2025-11-27-0-sensor_bias",
+      "station_id": "S0000",
+      "inverter_id": "S0000-I0",
+      "kind": "sensor_bias",
+      "category": "equipment",
+      "start": "2025-11-27 11:00:00+08:00",
+      "end": "2025-11-27 11:15:00+08:00",
+      "severity": 0.55,
+      "observable": true,
+      "parameters": {
+        "factor": 0.45
+      },
+      "overlaps": []
+    }
+  ],
+  "event_matching": "chronological prediction, nearest start among overlapping +/-10min, one-to-one",
+  "limitation": "Sensor-bias truth treated as equipment candidate; no unique cause attribution. Test sensitivity is descriptive, not tuning."
+}

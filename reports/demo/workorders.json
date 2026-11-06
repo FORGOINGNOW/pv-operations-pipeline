@@ -1,0 +1,2539 @@
+{
+  "synthetic": true,
+  "orders": [
+    {
+      "workorder_id": "S0000-I0:physical_residual_persistence",
+      "status": "复核",
+      "created": "2025-01-02T02:00:00+00:00",
+      "assigned": "2025-12-27",
+      "processing": "2025-12-27",
+      "closed": "2025-12-27",
+      "reopens": 62,
+      "last_event": {
+        "event_id": "S0000-I0-2025-12-31T02:00:00+00:00",
+        "station_id": "S0000",
+        "inverter_id": "S0000-I0",
+        "start": "2025-12-31T02:00:00+00:00",
+        "end": "2025-12-31T05:55:00+00:00",
+        "rule_version": "pv-v1",
+        "rule": "physical_residual_persistence",
+        "severity": "review",
+        "confidence": "candidate",
+        "evidence": {
+          "physical_deviation_median": -0.5496735350517454,
+          "peer_deviation_median": null,
+          "poa_wm2_median": 376.22405000000003
+        },
+        "candidates": [
+          "遮挡/积灰/限发/设备异常",
+          "气象或计量偏差"
+        ],
+        "action": "人工核验运行日志、气象与设备档案；电气风险转专业人员",
+        "evaluation_eligible": true
+      }
+    },
+    {
+      "workorder_id": "S0001-I0:physical_residual_persistence",
+      "status": "复核",
+      "created": "2025-01-02T02:00:00+00:00",
+      "assigned": "2025-12-27",
+      "processing": "2025-12-27",
+      "closed": "2025-12-27",
+      "reopens": 61,
+      "last_event": {
+        "event_id": "S0001-I0-2025-12-31T02:00:00+00:00",
+        "station_id": "S0001",
+        "inverter_id": "S0001-I0",
+        "start": "2025-12-31T02:00:00+00:00",
+        "end": "2025-12-31T05:55:00+00:00",
+        "rule_version": "pv-v1",
+        "rule": "physical_residual_persistence",
+        "severity": "review",
+        "confidence": "candidate",
+        "evidence": {
+          "physical_deviation_median": -0.5500521476576392,
+          "peer_deviation_median": null,
+          "poa_wm2_median": 377.0648
+        },
+        "candidates": [
+          "遮挡/积灰/限发/设备异常",
+          "气象或计量偏差"
+        ],
+        "action": "人工核验运行日志、气象与设备档案；电气风险转专业人员",
+        "evaluation_eligible": true
+      }
+    }
+  ],
+  "transitions": [
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-02T02:00:00+00:00",
+      "to": "待核验"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-02T02:00:00+00:00",
+      "to": "待核验"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-08T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-08T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-15T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-18",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-18",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-18",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-01-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-05T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-05T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-07T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-07T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-15",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-02-28T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-02-28T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-01",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-06T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-06T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-12T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-12T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-20",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-03-22",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-27T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-29",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-29",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-03-29",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-09T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-09T02:45:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-11T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-11T03:30:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-19",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-04-30T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-04-30T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-01",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-03",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-08T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-14T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-22",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-24",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-05-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-11T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-11T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-25T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-25T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-06-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-03",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-05",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-10T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-10T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-16T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-18",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-18",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-18",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-24",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-24",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-24",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-25T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-26",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-26",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-26",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-07-31T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-07-31T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-02",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-06T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-06T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-14",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-15T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-15T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-21T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-23",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-27T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-26T22:30:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-29",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-29",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-08-29",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-30",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-30",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-08-30",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-02T22:40:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-03T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-05T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-11T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-11T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-13",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-19",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-24T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-24T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-09-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-02T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-04",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-08T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-08T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-10",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-15T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-15T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-16",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-18",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-23T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-25",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-29T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-10-31",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-05T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-07T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-08",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-08",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-08",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-13T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-15",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-15",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-15",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-21",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-26T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-28T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-28T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-11-29",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-04T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-06",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-10T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-10T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-12",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-17T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-16T23:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-18",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-18",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-18",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-19T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-20",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-23T23:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-25T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "已派单"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "处理中"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-27",
+      "to": "已关闭"
+    },
+    {
+      "id": "S0000-I0:physical_residual_persistence",
+      "at": "2025-12-31T02:00:00+00:00",
+      "to": "复核"
+    },
+    {
+      "id": "S0001-I0:physical_residual_persistence",
+      "at": "2025-12-31T02:00:00+00:00",
+      "to": "复核"
+    }
+  ]
+}
