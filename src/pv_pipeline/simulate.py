@@ -12,23 +12,26 @@ import pandas as pd
 from .core import digest, json_write, physical
 from .quality import CASES, mutate
 
+# 故障/运行场景类别，不是数值指标；名称代表候选业务原因，不代表已完成因果诊断。
+# 当前多个场景共用“观测功率缩放”代理，不应理解为各类故障的完整电气模型。
+# 保持列表顺序：生成器按索引轮转场景，调整顺序会改变固定 seed 对应的真值。
 FAULTS = [
-    "shading",
-    "soiling",
-    "snow",
-    "degradation",
-    "string_failure",
-    "mppt_fault",
-    "trip",
-    "overtemperature",
-    "efficiency_loss",
-    "grid_outage",
-    "overvoltage",
-    "frequency",
-    "curtailment",
-    "planned_maintenance",
-    "meter_bias",
-    "sensor_bias",
+    "shading",  # 遮挡：树木、建筑等挡光；当前以故障区间功率下降代理。
+    "soiling",  # 积灰/污损：组件表面污染影响受光；当前区间功率乘 0.7。
+    "snow",  # 积雪覆盖：组件被雪遮盖；当前仅用功率下降代理，未模拟积雪/融雪过程。
+    "degradation",  # 组件衰减：当前按年内日序降低功率，仅为演示，不能作真实长期衰减估计。
+    "string_failure",  # 组串失效：部分串联组件支路损失输出；当前未模拟独立组串电路。
+    "mppt_fault",  # 最大功率点跟踪异常：偏离最佳运行点；当前仅用功率下降代理。
+    "trip",  # 逆变器跳闸/保护停机：当前区间功率归零，设备状态标记 stopped。
+    "overtemperature",  # 过温降额：高温下限制输出；当前未实现温度阈值与降额曲线联动。
+    "efficiency_loss",  # 逆变器转换效率下降：当前仅缩放功率，未独立降低 AC/DC 转换效率。
+    "grid_outage",  # 电网停电：当前区间功率归零并标记 stopped，不能据此与设备跳闸唯一辨因。
+    "overvoltage",  # 电网过压：当前三相电压设为 265 V，并降低功率；这是合成注入值。
+    "frequency",  # 电网频率异常：当前频率设为 52 Hz，并降低功率；这是合成注入值。
+    "curtailment",  # 限发：外部调度或控制主动限制输出；可能属于正常运行约束，而非设备损坏。
+    "planned_maintenance",  # 计划检修：当前功率归零、状态 maintenance，作为告警抑制的正常负对照。
+    "meter_bias",  # 计量偏差：读数偏离实际值；当前仅缩放观测功率，未实现独立电表误差模型。
+    "sensor_bias",  # 辐照传感器偏差：当前 POA 读数乘 1.6，不降低发电功率，可能造成虚假低效。
 ]
 
 

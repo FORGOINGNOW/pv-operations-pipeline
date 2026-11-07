@@ -104,6 +104,8 @@ CI 在 Ubuntu 运行相同检查，仓库 token 只有 contents:read，不部署
 
 ## 文件导航
 
+Ubuntu 部署与完整 smoke 验收入口见 [Linux 部署说明](docs/linux_deployment.md)。
+
 |目录|职责与证据|
 |---|---|
 |configs|smoke/demo/full 的版本化参数|
